@@ -11,3 +11,12 @@
 
 	background: #c0392b;
 }
+
+	@media screen and (min-width: 640px) and (max-width: 360px) {
+
+#p1{
+
+	background: black;
+}
+
+}
