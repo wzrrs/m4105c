@@ -1,8 +1,21 @@
 	@media screen and (max-device-width: 360px) {
 
-#p1{
+#p1 {
 
-	background: red;
+	background: #3498db;
 }
+
+#p2{
+	background: #fbfcfc;
+}
+
+#p3{
+
+	background: #c0392b;
+}
+ #img{
+
+ 	width: 100%;
+ }
 
 }
