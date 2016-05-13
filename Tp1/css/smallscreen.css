@@ -1,17 +1,19 @@
 	@media screen and (max-device-width: 360px) {
 
 #p1 {
-
-	background: ;
+   background: url(../img/bg.jpg);
+    background-size: 50px 70px ;
 }
 
 #p2{
-	background: ;
+	background: url(../img/bg.jpg);
+    background-size: contain;
 }
 
 #p3{
 
-	background: ;
+	   background: url(../img/bg.jpg);
+    background-size: cover;
 }
  #img{
 
