@@ -30,7 +30,6 @@ h1 {
 html { font-size: 62.5%; } /* 1rem vaut 10px */
 body { font-size: 1.6rem; } /* 1.4 rem vaut 14px */
 
-}
 
 #tableau {
 		display: block;
@@ -51,4 +50,11 @@ body { font-size: 1.6rem; } /* 1.4 rem vaut 14px */
         position: relative;
         width: auto !important;
         text-align: center;
+    }
+
+    #gris {
+    	background: #AFAFAF;
+    	border: 1px solid black;
+    }
+
     }
