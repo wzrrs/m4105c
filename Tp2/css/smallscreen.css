@@ -1,0 +1,288 @@
+	@media screen and (max-width: 768px) {
+
+#burger,#tel{
+    width: 10%;
+    float: left;
+    display: none;
+}    
+
+#header #img{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%; 
+    
+
+}
+#headerD{
+    margin-left: 27%;
+    font-size: 20px;
+    
+}
+
+
+
+#banniere #img{
+
+    padding-top: 1%;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+
+}
+h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#p1{
+    font-size: 16px;
+}
+
+#photo {
+
+    
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#cadre{
+    display: inline-block;
+    width: 45%;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+#img{
+    
+    width: 100%;
+}
+
+
+
+#mapform{
+
+
+    
+}
+
+ h2 {
+
+    color: red;
+    height: 16px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#map{
+    display: inline-block;
+    
+    width: 45%;
+
+}
+
+iframe{
+    width: 100%;
+}
+#titre {
+
+    display: block;
+    
+    width: 100%;
+}
+
+#form{
+    display: inline-block;
+    border-left: 2px solid black ;
+    width: 50%;
+    height: 100%;
+    vertical-align:top;
+    margin-left: 3%;
+}
+
+#for #nom,#prenom,#datenais,#ville{
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 95%;
+    margin-left: 3%;
+
+
+}
+
+#form #email,#message,#photooo{
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 95%;
+    margin-left: 3%;
+    
+
+}
+
+#form #submit{
+
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 21%;
+    margin-left: 75%;
+    position: right;
+
+}
+}
+
+@media screen and (max-width: 360px) {
+
+#burger{
+    width: 10%;
+    float: left;
+    display: block;
+
+}   
+
+
+#headerD{
+    display: none;
+    margin-left: 27%;
+    font-size: 20px;
+    
+}
+
+#tel{
+    width: 10%;
+    float: right;
+    display: block;
+
+}
+
+
+#header #img{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%; 
+    
+
+}
+
+
+
+
+#banniere #img{
+
+    padding-top: 1%;
+    margin-bottom: 4%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#p1{
+    font-size: 14px;
+}
+
+#photo {
+
+    
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#cadre{
+    display: inline-block;
+    width: 96%;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+#img{
+    
+    width: 100%;
+}
+
+
+
+#mapform{
+
+
+    
+}
+
+ h2 {
+
+    color: red;
+    height: 16px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#map{
+    display: inline-block;
+    
+    width: 98%;
+
+}
+
+iframe{
+    width: 100%;
+}
+#titre {
+
+    display: block;
+    
+    width: 100%;
+}
+
+#form{
+    display: inline-block;
+    border-left: 2px solid black ;
+    width: 98%;
+    height: 100%;
+    vertical-align:top;
+    margin-left: 3%;
+}
+
+#for #nom,#prenom,#datenais,#ville{
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 95%;
+    margin-left: 3%;
+
+
+}
+
+#form #email,#message,#photooo{
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 95%;
+    margin-left: 3%;
+    
+
+}
+
+#form #submit{
+
+    margin-top: 2%;
+    display: inline-block;
+    
+    width: 21%;
+    margin-left: 75%;
+    position: right;
+
+}
+}

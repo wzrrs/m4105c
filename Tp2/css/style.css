@@ -1,0 +1,128 @@
+#burger,#tel{
+    width: 10%;
+    float: left;
+    display: none;
+}    
+#header #img{
+	width: 6%;
+	
+	float: left;
+}
+#headerD{
+	margin-left: 70%;
+	
+}
+
+
+
+#banniere #img{
+
+	padding-top: 1%;
+	margin-bottom: 4%;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	
+
+}
+
+#photo {
+
+	
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+#cadre{
+	display: inline-block;
+	width: 20%;
+	
+	margin-left: 2%;
+	margin-right: 2%;
+
+}
+
+#img{
+	
+	width: 100%;
+}
+
+
+
+#mapform{
+
+
+	
+}
+
+ h2 {
+
+	color: red;
+	height: 16px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#map{
+	display: inline-block;
+	
+	width: 45%;
+
+}
+
+iframe{
+	width: 100%;
+}
+#titre {
+
+	display: block;
+	
+	width: 100%;
+}
+
+#form{
+    display: inline-block;
+	border-left: 2px solid black ;
+	width: 50%;
+	height: 100%;
+	vertical-align:top;
+	margin-left: 3%;
+}
+
+#form #nom,#prenom,#datenais,#ville{
+	margin-top: 2%;
+	display: inline-block;
+	
+	width: 45%;
+	margin-left: 3%;
+
+
+}
+
+#form #email,#message,#photooo{
+	margin-top: 2%;
+	display: inline-block;
+	
+	width: 94%;
+	margin-left: 3%;
+	
+
+}
+
+#form #submit{
+
+ 	margin-top: 2%;
+	display: inline-block;
+	
+	width: 21%;
+	margin-left: 75%;
+	position: right;
+
+}
+
+
+
+
+
+
