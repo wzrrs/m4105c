@@ -252,10 +252,10 @@ iframe{
     width: 98%;
     height: 100%;
     vertical-align:top;
-    
+    border-left:none;
 }
 
-#for #nom,#prenom,#datenais,#ville{
+#form #nom,#prenom,#datenais,#ville{
     margin-top: 2%;
     display: inline-block;
     
