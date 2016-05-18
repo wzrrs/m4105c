@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="shortcut icon" type="image/x-icon" href="img/Tryndamere.bmp" />
+  <title>web</title>
+  
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/smallscreen.css" type="text/css" />
-    <script type="text/javascript" src="js/jquery.js"></script>                
+  <script type="text/javascript" src="js/jquery.js"></script>  
   <script type="text/javascript" src="js/script.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCacZjx6BNLTZnAYs2-YhCXI8tgyFXeq8c" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFA0MHUBH81TaLL7-B_8y_QWZAOaXbH1U" type="text/javascript"></script>
+  
 </head>
 <body>
 <div id=header>
@@ -19,10 +21,12 @@
      <img  id="burger" src="img/menu.png" alt="">
    </div>
     <div id=headerD>
-      <a href="">Acceuil</a>  |
-      <a href="#tryndamere">Tryndamere</a>  |
-      <a href="#mapform">contact</a>  |
-      <input type="text" placeholder="Recherche" />
+     <ul>
+        <li><a href="#"> Accueil </a></li>
+        <li><a href="#Tryndamere"> Tryndamere </a></li>
+        <li><a href="#mapform"> Contact </a></li>
+        <li><input type="text" name="recherche" placeholder="Recherche..."></li>
+      </ul>
     </div>  
 
     <div>
@@ -74,11 +78,18 @@
 </div>
 
 <div id="mapform">
-  <div id="map">
+  <div id="map2">
       <div id="titre">
-  <h2>La ville de montcuq</h2>
+  <h2>Votre location</h2>
      </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91312.7529650933!2d1.1497932320433932!3d44.34029537750224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab80990bc906fd%3A0x14041eaa5e900cff!2s46800+Montcuq!5e0!3m2!1sfr!2sfr!4v1463561264170"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+     <div id="infoposition">
+  
+  </div>
+    <div id="map">
+      
+      
+    </div>
+ 
   </div>
   
   <div id="form">
@@ -115,17 +126,6 @@
 
 
   </div>
-<div id="conteneur_carte">
-  <h2> Titre 2 </h2>
-  
-  <div id="infoposition">
-  
-  </div>
-    <div id="map">
-      
-      
-    </div>
-  </div>  
 
 
 </div>

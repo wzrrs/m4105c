@@ -1,31 +1,31 @@
 $(document).ready(function() { 
 
-    $("#imgMenu").click(function(){
-        if($('#menu').is(':visible')){
-            $("#menu").css("display","none");
-        }else{
-            $("#menu").css("display","block");
-            $("#menu").css("float","center");
-            $("#menu").css("margin-top","5em");
-            $("#menu").css("margin-bottom","5em");
-        }
-    });
+  $("#imgMenu").click(function(){
+    if($('#menu').is(':visible')){
+      $("#menu").css("display","none");
+    }else{
+      $("#menu").css("display","block");
+      $("#menu").css("float","center");
+      $("#menu").css("margin-top","5em");
+      $("#menu").css("margin-bottom","5em");
+    }
+  });
 });
 
 function erreurPosition(error) {
     var info = "Erreur lors de la géolocalisation : ";
     switch(error.code) {
     case error.TIMEOUT:
-        info += "Timeout !";
+      info += "Timeout !";
     break;
     case error.PERMISSION_DENIED:
     info += "Vous n’avez pas donné la permission";
     break;
     case error.POSITION_UNAVAILABLE:
-        info += "La position n’a pu être déterminée";
+      info += "La position n’a pu être déterminée";
     break;
     case error.UNKNOWN_ERROR:
-        info += "Erreur inconnue";
+      info += "Erreur inconnue";
     break;
     }
 document.getElementById("infoposition").innerHTML = info;
