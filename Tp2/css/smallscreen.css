@@ -248,11 +248,11 @@ iframe{
 
 #form{
     display: inline-block;
-    border-left: 2px solid black ;
+   
     width: 98%;
     height: 100%;
     vertical-align:top;
-    margin-left: 3%;
+    
 }
 
 #for #nom,#prenom,#datenais,#ville{
