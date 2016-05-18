@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/smallscreen.css" type="text/css" />
     <script type="text/javascript" src="js/jquery.js"></script>                
   <script type="text/javascript" src="js/script.js"></script>
-   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCacZjx6BNLTZnAYs2-YhCXI8tgyFXeq8c" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 <body onload="initialize()">
@@ -115,25 +115,17 @@
 
 
   </div>
-  <div id="main">
-    <ul>
-        <li>Latitude : <span id="lat"></span></li>
-        <li>Longitude : <span id="long"></span></li>
-        <li>Précision : <span id="prec"></span></li>
-        <li>Altitude : <span id="alt"></span></li>
-        <li>Précision altitude : <span id="precalt"></span></li>
-        <li>Angle par rapport au Nord : <span id="angle"></span></li>
-        <li>Vitesse : <span id="speed"></span></li>
-        <li>Date - Heure : <span id="time"></span></li>
-    </ul>
-    <a href="#" onclick="startWatch()">Démarrer</a>
-    <a href="#" onclick="stopWatch()">Arrêter</a>
-</div>
-
-  <div id="map_canvas"></div>
-
-
-</div>
+<div id="conteneur_carte">
+  <h2> Titre 2 </h2>
+  
+  <div id="infoposition">
+  
+  </div>
+    <div id="map">
+      
+      
+    </div>
+  </div>  
 
 
 </div>

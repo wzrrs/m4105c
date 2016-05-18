@@ -1,36 +1,63 @@
-var previousPosition = null;
-   
-    function initialize() {
-      map = new google.maps.Map(document.getElementById("map_canvas"), {
-            zoom: 19,
-            center: new google.maps.LatLng(48.858565, 2.347198),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-          });   
+$(document).ready(function() { 
+
+    $("#imgMenu").click(function(){
+        if($('#menu').is(':visible')){
+            $("#menu").css("display","none");
+        }else{
+            $("#menu").css("display","block");
+            $("#menu").css("float","center");
+            $("#menu").css("margin-top","5em");
+            $("#menu").css("margin-bottom","5em");
+        }
+    });
+});
+
+function erreurPosition(error) {
+    var info = "Erreur lors de la géolocalisation : ";
+    switch(error.code) {
+    case error.TIMEOUT:
+        info += "Timeout !";
+    break;
+    case error.PERMISSION_DENIED:
+    info += "Vous n’avez pas donné la permission";
+    break;
+    case error.POSITION_UNAVAILABLE:
+        info += "La position n’a pu être déterminée";
+    break;
+    case error.UNKNOWN_ERROR:
+        info += "Erreur inconnue";
+    break;
     }
-       
-    if (navigator.geolocation)
-      var watchId = navigator.geolocation.watchPosition(successCallback, null, {enableHighAccuracy:true});
-    else
-      alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
-       
-    function successCallback(position){
-      map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
-        map: map
-      });  
-      if (previousPosition){
-        var newLineCoordinates = [
-           new google.maps.LatLng(previousPosition.coords.latitude, previousPosition.coords.longitude),
-           new google.maps.LatLng(position.coords.latitude, position.coords.longitude)];
-         
-        var newLine = new google.maps.Polyline({
-          path: newLineCoordinates,        
-          strokeColor: "#FF0000",
-          strokeOpacity: 1.0,
-          strokeWeight: 2
-        });
-        newLine.setMap(map);
-      }
-      previousPosition = position;
-    };    
+document.getElementById("infoposition").innerHTML = info;
+}
+
+function maPosition(position) {
+  var infopos = "Position déterminée :\n";
+  infopos += "Latitude : "+position.coords.latitude +"\n";
+  var latze = position.coords.latitude;
+  var longze = position.coords.longitude;
+  infopos += "Longitude: "+position.coords.longitude+"\n";
+  document.getElementById("infoposition").innerHTML = infopos;
+  
+  var myLatLng = {lat: latze, lng: longze};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 4
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: 'Hello World!'
+  });
+  
+  
+}
+
+if(navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
+}
