@@ -7,7 +7,6 @@ $(document).ready(function() {
       $("#headerD").css("display","block");
       $("#headerD").css("float","center");
       $("#headerD").css("margin-left","25em");
-      $("#headerD").css("margin-left","25em");
       $("#headerD").css("margin-bottom","0em");
     }
   });
