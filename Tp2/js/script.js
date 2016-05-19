@@ -6,8 +6,9 @@ $(document).ready(function() {
     }else{
       $("#headerD").css("display","block");
       $("#headerD").css("float","center");
-      $("#headerD").css("margin-left","0em");
-      $("#headerD").css("margin-bottom","5em");
+      $("#headerD").css("margin-left","25em");
+      $("#headerD").css("margin-left","25em");
+      $("#headerD").css("margin-bottom","0em");
     }
   });
 });
@@ -42,7 +43,7 @@ function maPosition(position) {
   var myLatLng = {lat: latze, lng: longze};
 
   // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var map2 = new google.maps.Map(document.getElementById('map2'), {
     center: myLatLng,
     scrollwheel: false,
     zoom: 4
@@ -50,7 +51,7 @@ function maPosition(position) {
 
   // Create a marker and set its position.
   var marker = new google.maps.Marker({
-    map: map,
+    map2: map2,
     position: myLatLng,
     title: 'Hello World!'
   });
@@ -61,3 +62,4 @@ function maPosition(position) {
 if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
 }
+
