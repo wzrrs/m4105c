@@ -68,7 +68,7 @@ function handleOrientation(event) {
   var gamma    = event.gamma;
 
   // Faites quelque chose avec les données acquises. ;)
-}
+
 
 var jardin = document.querySelector('.jardin'),
     balle = document.querySelector('.balle'),
@@ -97,6 +97,7 @@ function handleOrientation(event) {
 
   balle.style.top  = (maxX * x / 180 - 10) + "px";
   balle.style.left = (maxY * y / 180 - 10) + "px";
+}
 }
 
 window.addEventListener('deviceorientation', handleOrientation,true);
