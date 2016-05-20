@@ -61,6 +61,11 @@ function maPosition(position) {
 if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
 }*/
+
+if (window.DeviceOrientationEvent) {
+ console.log("DeviceOrientation is supported");
+}
+
 function handleOrientation(event) {
   var absolute = event.absolute;
   var alpha    = event.alpha;
