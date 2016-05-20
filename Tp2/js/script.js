@@ -61,6 +61,15 @@ function maPosition(position) {
 if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
 }*/
+function handleOrientation(event) {
+  var absolute = event.absolute;
+  var alpha    = event.alpha;
+  var beta     = event.beta;
+  var gamma    = event.gamma;
+
+  // Faites quelque chose avec les données acquises. ;)
+}
+
 var jardin = document.querySelector('.jardin'),
     balle = document.querySelector('.balle'),
     resultat = document.querySelector('.resultat'),
