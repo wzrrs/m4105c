@@ -62,9 +62,7 @@ if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
 }*/
 
-if (window.DeviceOrientationEvent) {
- console.log("DeviceOrientation is supported");
-}
+
 
 function handleOrientation(event) {
   var absolute = event.absolute;
@@ -72,6 +70,10 @@ function handleOrientation(event) {
   var beta     = event.beta;
   var gamma    = event.gamma;
 
+
+if (window.DeviceOrientationEvent) {
+ console.log("DeviceOrientation is supported");
+}
   // Faites quelque chose avec les données acquises. ;)
 
 
