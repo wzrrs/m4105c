@@ -63,43 +63,37 @@ if(navigator.geolocation){
 }*/
 
 
-if (window.DeviceOrientationEvent) {
- console.log("DeviceOrientation is supported");
-}
-
-if (window.DeviceOrientationEvent) {
-  // Listen for the event and handle DeviceOrientationEvent object
-  window.addEventListener('deviceorientation', devOrientHandler, false);
-}
-
-if (window.DeviceOrientationEvent) {
-  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
-  // Listen for the deviceorientation event and handle the raw data
-  window.addEventListener('deviceorientation', function(eventData) {
-    // gamma is the left-to-right tilt in degrees, where right is positive
-    var tiltLR = eventData.gamma;
-
-    // beta is the front-to-back tilt in degrees, where front is positive
-    var tiltFB = eventData.beta;
-
-    // alpha is the compass direction the device is facing in degrees
-    var dir = eventData.alpha
-
-    // call our orientation event handler
-    deviceOrientationHandler(tiltLR, tiltFB, dir);
-  }, false);
+if ((window.DeviceMotionEvent) {
+  window.addEventListener('devicemotion', deviceMotionHandler, false);
 } else {
-  document.getElementById("doEvent").innerHTML = "Not supported."
+  document.getElementById("dmEvent").innerHTML = "Not supported."
 }
 
-document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
-document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
-document.getElementById("doDirection").innerHTML = Math.round(dir);
+function deviceMotionHandler(eventData) {
+  var info, xyz = "[X, Y, Z]";
 
-// Apply the transform to the image
-var logo = document.getElementById("imgLogo");
-logo.style.webkitTransform =
-  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-logo.style.transform =
-  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+  // Grab the acceleration from the results
+  var acceleration = eventData.acceleration;
+  info = xyz.replace("X", acceleration.x);
+  info = info.replace("Y", acceleration.y);
+  info = info.replace("Z", acceleration.z);
+  document.getElementById("moAccel").innerHTML = info;
+
+  // Grab the acceleration including gravity from the results
+  acceleration = eventData.accelerationIncludingGravity;
+  info = xyz.replace("X", acceleration.x);
+  info = info.replace("Y", acceleration.y);
+  info = info.replace("Z", acceleration.z);
+  document.getElementById("moAccelGrav").innerHTML = info;
+
+  // Grab the rotation rate from the results
+  var rotation = eventData.rotationRate;
+  info = xyz.replace("X", rotation.alpha);
+  info = info.replace("Y", rotation.beta);
+  info = info.replace("Z", rotation.gamma);
+  document.getElementById("moRotation").innerHTML = info;
+
+  // // Grab the refresh interval from the results
+  info = eventData.interval;
+  document.getElementById("moInterval").innerHTML = info;       
+}
