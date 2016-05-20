@@ -6,8 +6,8 @@ $(document).ready(function() {
     }else{
       $("#headerD").css("display","block");
       $("#headerD").css("float","center");
-      $("#headerD").css("margin-left","0%");
-      $("#headerD").css("margin-bottom","0%");
+      $("#headerD").css("margin-left","0px");
+      $("#headerD").css("margin-bottom","0px");
     }
   });
 });
