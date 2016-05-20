@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 });
 
-/*function erreurPosition(error) {
+function erreurPosition(error) {
     var info = "Erreur lors de la géolocalisation : ";
     switch(error.code) {
     case error.TIMEOUT:
@@ -60,5 +60,5 @@ function maPosition(position) {
 
 if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition(maPosition, erreurPosition,{enableHighAccuracy:true});
-}*/
+}
 
